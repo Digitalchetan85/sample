@@ -1,0 +1,17 @@
+//Custom colors 
+$primary: darkblue;
+
+//import the functions & Variables
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+//custom theme colors 
+$custom-theme-colors: (
+    'first': lightblue,
+    'second': darkblue
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+//import bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
